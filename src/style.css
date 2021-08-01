@@ -91,17 +91,18 @@ header {
   font-weight: 200;
 }
 
+/* Category Buttons */
 .categories {
-  display: flex;
+  display: block;
   margin-top: 5em;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.categoryHerbs,
-.categoryPlants,
-.categorySucculents {
+.category1,
+.category2,
+.category3 {
   background: linear-gradient(to bottom right, #52734d, #ddffbc);
   border: solid 2px var(--clr-green-800);
   border-radius: 50%;
@@ -111,16 +112,16 @@ header {
   margin: 1.5em;
 }
 
-.categoryHerbs:hover,
-.categoryPlants:hover,
-.categorySucculents:hover {
+.category1:hover,
+.category2:hover,
+.category3:hover {
   cursor: pointer;
   font-size: 1.2em;
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .categories {
-    display: block;
+    display: flex;
   }
 }
