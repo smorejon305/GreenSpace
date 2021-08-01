@@ -1,5 +1,104 @@
+:root {
+  --clr-neutral-100: #feffde;
+  --clr-neutral-900: #191919;
+  --clr-green-200: #ddffbc;
+  --clr-green-500: #91c788;
+  --clr-green-800: #52734d;
+
+  /* RGBA */
+  --clr-rgba-neutral-100: rgb(254, 255, 222);
+  --clr-rgba-neutral-900: rgb(25, 25, 25);
+  --clr-rgba-green-200: rgb(221, 255, 188);
+  --clr-rgba-green-500: rgb(145, 199, 136);
+  --clr-rgba-green-800: rgb(82, 115, 77);
+
+  --ff-primary: "Georama", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: 16px;
+}
+
+main {
+  min-height: 100vh;
+  background: linear-gradient(to top right, #52734d, #ddffbc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: var(--clr-neutral-100);
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(to top, #52734d, #ddffbc);
+  border-radius: 2rem;
+  z-index: 3;
+  backdrop-filter: blur (2rem);
+}
+
+.circle1,
+.circle2 {
+  background: linear-gradient(
+    to left top,
+    rgba(221, 255, 188, 0.8),
+    rgba(82, 115, 77, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  z-index: 2;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle1 {
+  height: 15rem;
+  width: 15rem;
+  top: 5%;
+  left: 10%;
+}
+
+.circle2 {
+  bottom: 5%;
+  right: 10%;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+}
+.headerTitle {
+  color: var(--clr-green-800);
+  font-size: 3em;
+}
+.headerSubtitle {
+  color: var(--clr-green-800);
+  font-size: 1em;
+}
+
+.categories {
+  display: flex;
+  margin-top: 5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoryHerbs,
+.categoryPlants,
+.categorySucculents {
+  background: linear-gradient(to bottom right, #52734d, #ddffbc);
+
+  border: solid 5px var(--clr-green-800);
+  border-radius: 50%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+  padding: 2em;
+  margin: 1.5em;
 }
