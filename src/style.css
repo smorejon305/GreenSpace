@@ -120,6 +120,11 @@ header {
   text-decoration: underline;
 }
 
+.leafIcon {
+  color: var(--clr-neutral-900);
+  padding-bottom: 0.5em;
+}
+/* MEDIA QUERIES */
 @media screen and (min-width: 1024px) {
   .categories {
     display: flex;
