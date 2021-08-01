@@ -45,7 +45,8 @@ main {
 }
 
 .circle1,
-.circle2 {
+.circle2,
+.circle3 {
   background: linear-gradient(
     to left top,
     rgba(221, 255, 188, 0.8),
@@ -67,7 +68,12 @@ main {
 
 .circle2 {
   bottom: 5%;
-  right: 10%;
+  right: 8%;
+}
+
+.circle3 {
+  top: -15%;
+  right: -12%;
 }
 
 /* HEADER */
