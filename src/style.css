@@ -109,7 +109,7 @@ header {
   border: solid 2px var(--clr-green-800);
   border-radius: 50%;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  font-size: 0.5em;
+  font-size: 0.8em;
   padding: 3.5em 5em;
   margin: 1.5em;
 }
@@ -127,6 +127,7 @@ header {
   color: var(--clr-neutral-900);
   padding-bottom: 0.5em;
 }
+
 /* MEDIA QUERIES */
 
 /* Tablet */
