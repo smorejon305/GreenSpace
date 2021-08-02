@@ -24,6 +24,7 @@
 body {
   font-family: var(--ff-primary);
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 main {
@@ -41,7 +42,7 @@ main {
   background: linear-gradient(to top, #52734d, #ddffbc);
   border-radius: 2rem;
   z-index: 3;
-  backdrop-filter: blur (2rem);
+  backdrop-filter: blur (5rem);
 }
 
 .circle1,
@@ -87,14 +88,13 @@ header {
 }
 .headerSubtitle {
   color: var(--clr-green-800);
-  font-size: 1em;
+  font-size: 0.7em;
   font-weight: 200;
 }
 
 /* Category Buttons */
 .categories {
   display: block;
-  margin-top: 5em;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -102,21 +102,24 @@ header {
 
 .category1,
 .category2,
-.category3 {
+.category3,
+.category4,
+.category5 {
   background: linear-gradient(to bottom right, #52734d, #ddffbc);
   border: solid 2px var(--clr-green-800);
   border-radius: 50%;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  font-size: 1em;
-  padding: 2em;
+  font-size: 0.5em;
+  padding: 3.5em 5em;
   margin: 1.5em;
 }
 
 .category1:hover,
 .category2:hover,
-.category3:hover {
+.category3:hover,
+.category4:hover,
+.category5:hover {
   cursor: pointer;
-  font-size: 1.2em;
   text-decoration: underline;
 }
 
@@ -125,8 +128,79 @@ header {
   padding-bottom: 0.5em;
 }
 /* MEDIA QUERIES */
-@media screen and (min-width: 1024px) {
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .headerTitle {
+    font-size: 3.5em;
+  }
+
+  .headerSubtitle {
+    font-size: 1em;
+  }
   .categories {
     display: flex;
+  }
+
+  .category1,
+  .category2,
+  .category3,
+  .category4,
+  .category5 {
+    background: linear-gradient(to bottom right, #52734d, #ddffbc);
+    border: solid 2px var(--clr-green-800);
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    font-size: 0.78em;
+    padding: 2em;
+    margin: 1.5em;
+  }
+
+  .category1:hover,
+  .category2:hover,
+  .category3:hover,
+  .category4:hover,
+  .category5:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+/* Full Screen & Desktop */
+@media screen and (min-width: 1024px) {
+  .headerTitle {
+    font-size: 4.5em;
+  }
+
+  .headerSubtitle {
+    font-size: 1.5em;
+  }
+
+  .categories {
+    display: flex;
+  }
+
+  .category1,
+  .category2,
+  .category3,
+  .category4,
+  .category5 {
+    background: linear-gradient(to bottom right, #52734d, #ddffbc);
+    border: solid 2px var(--clr-green-800);
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    font-size: 0.8em;
+    padding: 3.5em;
+    margin: 1.5em;
+  }
+
+  .category1:hover,
+  .category2:hover,
+  .category3:hover,
+  .category4:hover,
+  .category5:hover {
+    cursor: pointer;
+    font-size: 1.1em;
+    text-decoration: underline;
   }
 }
