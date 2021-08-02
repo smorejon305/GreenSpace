@@ -119,6 +119,7 @@ header {
 .category3:hover,
 .category4:hover,
 .category5:hover {
+  background: linear-gradient(to bottom left, #52734d, #ddffbc);
   cursor: pointer;
   text-decoration: underline;
 }
@@ -126,6 +127,29 @@ header {
 .leafIcon {
   color: var(--clr-neutral-900);
   padding-bottom: 0.5em;
+}
+
+/* CONTACT BUTTON */
+.contact {
+  margin: 2em;
+}
+.contactBtn {
+  background: linear-gradient(to bottom left, #52734d, #ddffbc);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  font-family: var(--ff-primary);
+  font-size: 1.5em;
+  display: block;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+}
+
+.contactBtn:hover {
+  background: linear-gradient(to bottom right, #52734d, #ddffbc);
+}
+
+a {
+  color: var(--clr-neutral-900);
 }
 
 /* MEDIA QUERIES */
@@ -201,7 +225,6 @@ header {
   .category4:hover,
   .category5:hover {
     cursor: pointer;
-    font-size: 1.1em;
     text-decoration: underline;
   }
 }
